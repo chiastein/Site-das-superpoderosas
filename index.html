@@ -1,0 +1,192 @@
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site das Superpoderosas</title>
+    
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f7f9fc;
+            color: #333333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            background: linear-gradient(135deg, #ff758c 0%, #ff7eb3 100%);
+            color: white;
+            width: 100%;
+            text-align: center;
+            padding: 40px 20px;
+            box-sizing: border-box;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        nav {
+            margin-top: 20px;
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            background-color: white;
+            color: #ff758c;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #ff758c;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        main {
+            max-width: 800px;
+            width: 90%;
+            background-color: white;
+            margin: 30px 0;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        .img-principal {
+            max-width: 100%;
+            height: auto;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            margin-top: 15px;
+        }
+
+        /* 1. DISEÑO DE LAS SECCIONES DE LOS MIEMBROS */
+        .membro-secao {
+            margin-top: 50px;
+            padding-top: 40px;
+            border-top: 2px dashed #f0f0f0;
+            text-align: left;
+            
+            /* Alinea la foto y el texto en fila */
+            display: flex;
+            align-items: center;
+            gap: 20px; 
+        }
+
+        .membro-texto {
+            flex: 1; /* El texto ocupa el espacio restante */
+        }
+
+        .membro-secao h3 {
+            color: #ff758c;
+            font-size: 1.8rem;
+            margin: 0 0 10px 0;
+        }
+
+        /* 2. ESTILO PARA LAS MINIATURAS */
+        .miniatura {
+            width: 120px;       /* Tamaño fijo para que todas sean iguales */
+            height: 120px;      /* Alto igual al ancho para hacer un círculo */
+            object-fit: cover;  /* Recorta la imagen para que encaje sin deformarse */
+            border-radius: 50%; /* Hace la foto completamente redonda */
+            border: 3px solid #ff758c; /* Borde rosa alrededor */
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Bem-vindo ao site das superpoderosas</h1>
+        <p>Esta e a historia da nossa equipe</p>
+        
+        <nav>
+            <a href="#professor">Professor</a>
+            <a href="#alejandro">Alejandro</a>
+            <a href="#docinho">Docinho</a>
+            <a href="#lindinha">Lindinha</a>
+            <a href="#florzinha">Florzinha</a>
+            <a href="#gabriel">Gabriel</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Te contaremos como nos formamos</h2>
+        <p>Esta e a foto da nossa line-up</p>
+        
+        <img src="fotoperfil.jpeg" alt="E somos esses" class="img-principal" width="400">
+
+        <!-- SECCIONES CON MINIATURAS (Cambia el 'src' por tus archivos reales) -->
+         <section id="professor" class="membro-secao">
+            <img src="professor.jpg" alt="professor" class="miniatura">
+            <div class="membro-texto">
+                <h3>Professor</h3>
+                <p>Escreva aqui a descrição, poderes ou função da Docinho na equipe.</p>
+            </div>
+        </section>
+        
+        <section id="alejandro" class="membro-secao">
+            <!-- Recuerda cambiar "alejandro.jpg" por el nombre real de tu archivo -->
+            <img src="alejandrofoto.png" alt="Alejandro" class="miniatura">
+            <div class="membro-texto">
+                <h3>Alejandro (Ele)</h3>
+                <p>Escreva aqui a descrição, poderes ou função do Alejandro na equipe.</p>
+            </div>
+        </section>
+
+        <section id="docinho" class="membro-secao">
+            <img src="docinho.jpg" alt="Docinho" class="miniatura">
+            <div class="membro-texto">
+                <h3>Docinho</h3>
+                <p>Escreva aqui a descrição, poderes ou função da Docinho na equipe.</p>
+            </div>
+        </section>
+
+        <section id="lindinha" class="membro-secao">
+            <img src="lindinha.jpg" alt="Lindinha" class="miniatura">
+            <div class="membro-texto">
+                <h3>Lindinha</h3>
+                <p>Escreva aqui a descrição, poderes ou função da Lindinha na equipe.</p>
+            </div>
+        </section>
+
+        <section id="florzinha" class="membro-secao">
+            <img src="florzinha.jpg" alt="Florzinha" class="miniatura">
+            <div class="membro-texto">
+                <h3>Florzinha</h3>
+                <p>Escreva aqui a descrição, poderes ou função da Florzinha na equipe.</p>
+            </div>
+        </section>
+
+        <section id="gabriel" class="membro-secao">
+            <img src="gabriel.jpg" alt="Gabriel" class="miniatura">
+            <div class="membro-texto">
+                <h3>Gabriel (Vovozinho)</h3>
+                <p>Escreva aqui a descrição, poderes ou função do Gabriel na equipe.</p>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>
