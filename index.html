@@ -118,16 +118,42 @@
 
     <header>
         <h1>Bem-vindo ao site das superpoderosas</h1>
-        <p>Esta e a historia da nossa equipe</p>
-        
+
+        <style>
+    nav {
+        display: flex;
+        flex-wrap: wrap;       /* Permite que os elementos se dividam em linhas */
+        justify-content: center; /* Centraliza todos os botões no meio */
+        gap: 10px;             /* Espaçamento entre os botões */
+        width: 100%;
+    }
+
+    /* Esta classe força a div a ocupar toda a largura da linha de cima */
+    .linha-topo {
+        flex-basis: 100%;      /* Ocupa 100% da tela */
+        display: flex;
+        justify-content: center; /* Centraliza o botão oval dentro dela */
+        margin-bottom: 15px;   /* Cria o espaço para a fileira de baixo */
+    }
+
+    /* O botão mantém seu estilo oval pequeno perfeitamente */
+
+        /* Seus estilos atuais do botão (borda, fundo branco, etc.) */
+
+</style>
         <nav>
-            <a href="#professor">Professor</a>
-            <a href="#alejandro">Alejandro</a>
-            <a href="#docinho">Docinho</a>
-            <a href="#lindinha">Lindinha</a>
-            <a href="#florzinha">Florzinha</a>
-            <a href="#gabriel">Gabriel</a>
-        </nav>
+    <!-- Colocamos uma div invisível envolvendo apenas o botão da história -->
+    <div class="linha-topo">
+        <a href="#historia" class="btn-historia">Historia</a>
+    </div>
+    
+    <a href="#professor">Professor</a>
+    <a href="#alejandro">Alejandro</a>
+    <a href="#docinho">Docinho</a>
+    <a href="#lindinha">Lindinha</a>
+    <a href="#florzinha">Florzinha</a>
+    <a href="#vovozinho">Vovozinho</a>
+</nav>
     </header>
 
     <main>
@@ -137,8 +163,15 @@
         <img src="fotoperfil.jpeg" alt="E somos esses" class="img-principal" width="400">
 
         <!-- SECCIONES CON MINIATURAS (Cambia el 'src' por tus archivos reales) -->
+<section id="historia" class="membro-secao">
+            <div class="membro-texto">
+                <h3>Historia</h3>
+                <p>aqui uma breve descriçao e cuando clica vai para a historia do personagem.</p>
+            </div>
+        </section>
+
          <section id="professor" class="membro-secao">
-            <img src="professor.jpg" alt="professor" class="miniatura">
+            <img src="professor.png" alt="professor" class="miniatura">
             <div class="membro-texto">
                 <h3>Professor</h3>
                 <p>Escreva aqui a descrição, poderes ou função da Docinho na equipe.</p>
@@ -149,13 +182,16 @@
             <!-- Recuerda cambiar "alejandro.jpg" por el nombre real de tu archivo -->
             <img src="alejandrofoto.png" alt="Alejandro" class="miniatura">
             <div class="membro-texto">
-                <h3>Alejandro (Ele)</h3>
-                <p>Escreva aqui a descrição, poderes ou função do Alejandro na equipe.</p>
+                <h3>Alejandro</h3>
+                <p>Alejandro, mais conhecido como ELE, o vilao, o impetulante, a cidade fica em caos quando ele sai nas ruas,
+                    quando dirige parece o Bryan o'connor, uma besta enjaulada dirigindo, a reencarnaçao do Senna.
+                    A equipe tenta capturar mas nunca consegue, Alejandro sempre da um jeito, o verdadeiro vilao que encanta os cidadaos da cidade!!
+                </p>
             </div>
         </section>
 
         <section id="docinho" class="membro-secao">
-            <img src="docinho.jpg" alt="Docinho" class="miniatura">
+            <img src="docinho.png" alt="Docinho" class="miniatura">
             <div class="membro-texto">
                 <h3>Docinho</h3>
                 <p>Escreva aqui a descrição, poderes ou função da Docinho na equipe.</p>
@@ -163,7 +199,7 @@
         </section>
 
         <section id="lindinha" class="membro-secao">
-            <img src="lindinha.jpg" alt="Lindinha" class="miniatura">
+            <img src="lindinha.png" alt="Lindinha" class="miniatura">
             <div class="membro-texto">
                 <h3>Lindinha</h3>
                 <p>Escreva aqui a descrição, poderes ou função da Lindinha na equipe.</p>
@@ -171,17 +207,19 @@
         </section>
 
         <section id="florzinha" class="membro-secao">
-            <img src="florzinha.jpg" alt="Florzinha" class="miniatura">
+            <img src="florzinha.png" alt="Florzinha" class="miniatura">
             <div class="membro-texto">
                 <h3>Florzinha</h3>
-                <p>Escreva aqui a descrição, poderes ou função da Florzinha na equipe.</p>
+                <p>A CALVA<p>
+
+                </p>pior da equipe, pija, nojenta, nao me toque</p>
             </div>
         </section>
 
-        <section id="gabriel" class="membro-secao">
-            <img src="gabriel.jpg" alt="Gabriel" class="miniatura">
+        <section id="vovozinho" class="membro-secao">
+            <img src="vovozinho.png" alt="Vovozinho" class="miniatura">
             <div class="membro-texto">
-                <h3>Gabriel (Vovozinho)</h3>
+                <h3>Vovozinho</h3>
                 <p>Escreva aqui a descrição, poderes ou função do Gabriel na equipe.</p>
             </div>
         </section>
